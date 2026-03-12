@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:untitled8/pages/welcom_page.dart';
+import 'package:untitled8/things/notifier.dart';
 
-import 'pages/login_page.dart';
-import 'pages/welcom_page.dart';
-import 'pages/widget_tree.dart';
-import 'things/notifier.dart';
 
 void main(){
   runApp(const Main());

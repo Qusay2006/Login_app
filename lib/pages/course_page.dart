@@ -3,7 +3,6 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
-import '../main.dart';
 import '../things/usersin.dart';
 class CoursePage extends StatefulWidget {
   const CoursePage({super.key});

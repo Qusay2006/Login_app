@@ -21,7 +21,7 @@ class _ProfilePageState extends State<ProfilePage> {
   void loadData() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     setState(() {
-      username = prefs.getString('em') ?? 'Unknown';
+      username = prefs.getString('username') ?? 'Unknown';
       token = prefs.getString('token') ?? 'No token';
     });
   }
@@ -37,7 +37,7 @@ class _ProfilePageState extends State<ProfilePage> {
              SizedBox(height: 20),
             Text(username, style:  TextStyle(fontSize: 22, fontWeight: FontWeight.bold)),
              SizedBox(height: 10),
-            Text('Token: ${token}', style:  TextStyle(fontSize: 12)),
+            Text('Token: ${token.substring(0,20)}...', style:  TextStyle(fontSize: 12)),
           ],
         ),
       ),
