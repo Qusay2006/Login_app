@@ -9,7 +9,7 @@
 A Flutter mobile app with authentication flow and user browsing.
 
 ## Features
-- Login with JWT token authentication
+- Login with JWT token authentication (user logs in once, receives a token that keeps them signed in automatically)
 - Form validation (username and password required)
 - Token persistence using SharedPreferences
 - Auto-login if token exists
